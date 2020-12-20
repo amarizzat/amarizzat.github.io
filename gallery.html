@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>My Personal Pages</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="biodata.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Biodata</a>
+    <a href="familyhometown.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Family & Hometown</a>
+    <a href="education.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Education</a>
+    <a href="skills.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Skills </a>
+    <a href="favfoodsong.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Food & Song </a>
+    <a href="moviegame.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Movie & Game</a>
+    <a href="interestgoal.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Interest & Goal</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Gallery</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="biodata.html" class="w3-bar-item w3-button w3-padding-large">Biodata</a>
+    <a href="familyhometown.html" class="w3-bar-item w3-button w3-padding-large">Family & Hometown</a>
+    <a href="education.html" class="w3-bar-item w3-button w3-padding-large">Education</a>
+    <a href="skills.html" class="w3-bar-item w3-button w3-padding-large">Skills</a>
+    <a href="favfoodsong.html" class="w3-bar-item w3-button w3-padding-large">Food & Song</a>
+    <a href="moviegame.html" class="w3-bar-item w3-button w3-padding-large">Movie & Game</a>
+    <a href="interestgoal.html" class="w3-bar-item w3-button w3-padding-large">Interest & Goal</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large">Gallery</a>
+  </div>
+</div>
+
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+     <center> <h1>My Gallery</h1> </center>
+     <div class="gallery">
+      <a target="_blank" href="chicken.jpg">
+        <img src="pictures/chicken.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">Chicken chop at my local restaurant. </div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="cendol.jpg">
+        <img src="pictures/cendol.jpg" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">Cendol pulut at Gunung Jerai.</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="steamboat.jpg">
+        <img src="pictures/steamboat.jpg" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc">Steamboat with my friends.</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="pc.jpg">
+        <img src="pictures/pc.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">My computer. Using it for work and gaming.</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="keyboard.jpg">
+        <img src="pictures/keyboard.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">My customized mechanical keyboard.</div>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <a class="fa fa-twitter w3-hover-opacity" href="https://twitter.com/Amar_Izzat"></a>
+    
+ </div>
+ <p> You can contact me here; amarizzat@gmail.com </p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
